@@ -34,22 +34,23 @@
 ### Note: Commands are case sensitive
 
 * A # - used to create a new common process, where # is the specified bytes of memory required to run the process
-      (A 100 - means a new common process is created that requires 100 bytes of memory)
+*        (A 100 - means a new common process is created that requires 100 bytes of memory)
 
 * AR # - used to create a new real-time process, where # is the specified bytes of memory required to run the process
-       (AR 100 - means a new common process is created that requires 100 bytes of memory)
+*        (AR 100 - means a new common process is created that requires 100 bytes of memory)
 
-* Q - the current process that is using the CPU ends (the process goes to the end of the queue in its appropriate position)
+* Q - the current process that is using the CPU ends 
+*     (the process goes to the end of the queue in its appropriate position)
 
 * t - the current process that is using the CPU terminates (the process' memory is freed and ID is deleted)
 
 * d # - the process that is currently using the CPU is requesting to use hard disk #
-      (d 1 - the current running process is requesting to use hard disk 1 and leaves the CPU ready-queue)
-      (the CPU ready-queue is then updated to be empty or is being used by the next process in the ready-queue)
+*      (d 1 - the current running process is requesting to use hard disk 1 and leaves the CPU ready-queue)
+*      (the CPU ready-queue is then updated to be empty or is being used by the next process in the ready-queue)
 
 * D # - the hard disk # has finished running for one process
-      (D 1 - the process that was requesting disk 1 is finished and leaves the I/O queue)
-      (the process re-enters the CPU ready-queue in its appropriate spot)
+*       (D 1 - the process that was requesting disk 1 is finished and leaves the I/O queue)
+*       (the process re-enters the CPU ready-queue in its appropriate spot)
 
 * S r - displays which process is using the CPU and which processes are waiting in both levels of the ready-queue
 
