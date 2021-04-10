@@ -31,6 +31,8 @@
 
 ## Simulation starts afterwards and these are the usable commands:
 
+### Note: Commands are case sensitive
+
 * A # - used to create a new common process, where # is the specified bytes of memory required to run the process
       (A 100 - means a new common process is created that requires 100 bytes of memory)
 
